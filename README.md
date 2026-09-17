@@ -13,32 +13,36 @@ Features
 * Power
 * Interactive operation selection
 
-## Technologies
+Technologies
 
 * Python 3.12
 * Podman
 * Containerfile
 
-## Project Structure
+Project Structure
 
-text
+```text
 python-podman-calculator/
 ├── calculator.py
 ├── Containerfile
 └── README.md
+```
 
+## Build the Image
 
-Build the Image
-bash
+```bash
 podman build -t calculator:v1 .
+```
 
-Run the Calculator
+## Run the Calculator
 
-bash
+```bash
 podman run --rm -it calculator:v1
+```
 
-How It Works
+## How It Works
 
+text
 User
  ↓
 Choose Operation
@@ -55,7 +59,7 @@ Podman Concepts Practiced
 * Base images
 * podman build
 * Container images
-* podman run
+* podman run`
 * Interactive containers using -it
 * Container lifecycle using --rm
 
